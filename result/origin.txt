@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     pima-indians-diabetes-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.Standardize
+Instances:    768
+Attributes:   9
+              Pregnancies
+               Glucose
+               BloodPressure
+               SkinThickness
+               Insulin
+               BMI
+               DiabetesPedigreeFunction
+               Age
+               Outcome
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.27 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         581               75.651  %
+Incorrectly Classified Instances       187               24.349  %
+Kappa statistic                          0.4384
+Mean absolute error                      0.2435
+Root mean squared error                  0.4934
+Relative absolute error                 53.5723 %
+Root relative squared error            103.5252 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.866     0.448      0.783     0.866     0.822      0.709    0
+                 0.552     0.134      0.688     0.552     0.613      0.709    1
+Weighted Avg.    0.757     0.338      0.75      0.757     0.749      0.709
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 433  67 |   a = 0
+ 120 148 |   b = 1
+

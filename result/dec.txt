@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     dec-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    953
+Attributes:   9
+              Pregnancies
+               Glucose
+               BloodPressure
+               SkinThickness
+               Insulin
+               BMI
+               DiabetesPedigreeFunction
+               Age
+               Outcome
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         736               77.2298 %
+Incorrectly Classified Instances       217               22.7702 %
+Kappa statistic                          0.5443
+Mean absolute error                      0.2277
+Root mean squared error                  0.4772
+Relative absolute error                 45.5514 %
+Root relative squared error             95.4475 %
+Total Number of Instances              953     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.757     0.213      0.775     0.757     0.766      0.772    0
+                 0.787     0.243      0.77      0.787     0.778      0.772    1
+Weighted Avg.    0.772     0.228      0.772     0.772     0.772      0.772
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 355 114 |   a = 0
+ 103 381 |   b = 1
+
